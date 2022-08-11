@@ -58,15 +58,30 @@ main {
       background-color: transparent;
       border: none;
       width: 100%;
+      transition: all 0.3s ease-in-out;
 
       .arrow {
         font-size: 24px;
         color: $icon-bg;
+        transform: rotate(180deg);
+        transition: transform 0.3s ease-in-out;
       }
     }
 
     &__body {
       display: none;
+    }
+
+    &.active &__header {
+      margin-bottom: 20px;
+
+      .arrow {
+        transform: rotate(0);
+      }
+    }
+
+    &.active &__body {
+      display: block;
     }
   }
 }
