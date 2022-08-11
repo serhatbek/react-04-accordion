@@ -2,7 +2,7 @@
 
 $primary-bg: #3f0a53;
 $secondary-bg: #ffffff;
-$icon-bg: #e7e1ea;
+$icon-bg: #d6cfda;
 $text: #131e2b;
 $border: #ecebec;
 
@@ -14,11 +14,59 @@ $border: #ecebec;
   box-sizing: inherit;
 }
 
-body {
+main {
   box-sizing: border-box;
   display: flex;
   justify-content: center;
   align-items: center;
   height: 100vh;
+  width: 100vw;
   font-family: 'Poppins', sans-serif;
+  background-color: $primary-bg;
+}
+
+.container {
+  max-width: 650px;
+  background-color: $secondary-bg;
+  border-radius: 8px;
+  padding: 50px;
+
+  h3 {
+    font-size: 24px;
+    margin-bottom: 20px;
+  }
+}
+
+.accordion {
+  &__item {
+    padding: 20px;
+    border: 1px solid $border;
+    border-radius: 4px;
+    box-shadow: 0px 8px 18px 0px rgba(0, 0, 0, 0.6);
+
+    &:not(:last-child) {
+      margin-bottom: 40px;
+    }
+
+    &__header {
+      font-size: 18px;
+      font-weight: 600;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      cursor: pointer;
+      background-color: transparent;
+      border: none;
+      width: 100%;
+
+      .arrow {
+        font-size: 24px;
+        color: $icon-bg;
+      }
+    }
+
+    &__body {
+      display: none;
+    }
+  }
 }

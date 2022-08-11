@@ -1,17 +1,17 @@
-import { default as accordions } from '../../data';
-console.log(accordions);
+import { BsFillArrowDownCircleFill } from 'react-icons/bs';
 
-const Faq = () => {
+const Faq = ({ questions }) => {
   return (
     <div className='accordion'>
-      {accordions.map((accordion) => {
+      {questions.map((accordion) => {
         const { id, title, info } = accordion;
 
         return (
           <div className='accordion__item' key={id}>
-            <div className='accordion__item__header'>
+            <button className='accordion__item__header'>
               <p>{title}</p>
-            </div>
+              <BsFillArrowDownCircleFill className='arrow' />
+            </button>
             <div className='accordion__item__body'>{info}</div>
           </div>
         );
