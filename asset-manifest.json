@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/react-04-accordion/static/css/main.5f13cbab.css",
+    "main.js": "/react-04-accordion/static/js/main.f58e50ca.js",
+    "index.html": "/react-04-accordion/index.html",
+    "main.5f13cbab.css.map": "/react-04-accordion/static/css/main.5f13cbab.css.map",
+    "main.f58e50ca.js.map": "/react-04-accordion/static/js/main.f58e50ca.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.5f13cbab.css",
+    "static/js/main.f58e50ca.js"
+  ]
+}
